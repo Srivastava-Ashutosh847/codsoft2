@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travel</title>
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        /* Layout Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            background: #0D47A1;
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #1565C0;
+        }
+
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #BBDEFB;
+        }
+
+        /* Hero */
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?travel,nature') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #0D47A1;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: #f1f1f1;
+            border-radius: 12px;
+            padding: 1.5rem;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature h3 {
+            color: #1976D2;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact */
+        #contact p {
+            text-align: center;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #0D47A1;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Wanderlust Travel</h1>
+        <p>Discover Your Next Adventure</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Explore the World with Us</h2>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p style="text-align:center;">At Wanderlust Travel, we curate unforgettable experiences across the globe—from tropical getaways to cultural journeys. Start your adventure today.</p>
+        </section>
+
+        <!-- Features/Destinations Section -->
+        <section id="destinations">
+            <h2>Popular Destinations</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Paris, France</h3>
+                    <p>Stroll through romantic streets and visit the iconic Eiffel Tower.</p>
+                </div>
+                <div class="feature">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Relax on tropical beaches and explore rich Balinese culture.</p>
+                </div>
+                <div class="feature">
+                    <h3>New York, USA</h3>
+                    <p>Experience the city that never sleeps with endless attractions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: hello@wanderlust.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Wanderlust Travel. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

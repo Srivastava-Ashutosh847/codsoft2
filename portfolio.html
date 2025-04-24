@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #120d5b;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 2rem 0;
+            margin-top: 1rem;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #0a0564;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .about img {
+            max-width: 150px;
+            border-radius: 50%;
+        }
+
+        .about div {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .skills, .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .skill, .project {
+            background: #ffffff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgb(19, 2, 89);
+        }
+
+        .project img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Resume Section */
+        .resume {
+            text-align: center;
+        }
+
+        .resume a {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #081472;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+
+        .resume a:hover {
+            background-color: #050f5b;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 0.5rem 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Ashutosh Srivastava</h1>
+        <p>I'm a passionate Cybersecurity Enthusiast with a strong interest in SOC (Security Operations Center) analysis. I enjoy monitoring, analyzing, and responding to security incidents to protect digital environments. My focus is on threat detection, log analysis, and staying ahead of emerging cyber threats. This portfolio showcases my skills, certifications, and projects that reflect my journey in the cybersecurity field.
+
+        </p>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <img src="" alt="Ashutosh Srivastava">
+            <div>
+                <p>Hello! I am a Ashutosh Srivastava. I specialize in []. With [] of experience, I have worked on diverse projects and honed my skills in [].</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Proficient in building semantic and accessible web pages.</p>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>Experienced in creating responsive and visually appealing designs.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <p>Skilled in interactive and dynamic web applications.</p>
+            </div>
+            <!-- Add more skills as needed -->
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project Title 1</h3>
+                <p>Description of the project and its significance.</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project Title 2</h3>
+                <p>Description of the project and its significance.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <div class="resume">
+            <a href="resume.pdf" download>Download My Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+            <p>Email: yourname@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+

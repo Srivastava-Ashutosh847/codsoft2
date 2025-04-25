@@ -164,9 +164,24 @@
         }
 
         function updateDisplay() {
-            const display = document.getElementById('display');
-            display.value = currentNumber;
-        }
+    const display = document.getElementById('display');
+    if (operator && currentNumber === '') {
+        display.value = `${previousNumber} ${getOperatorSymbol(operator)}`;
+    } else if (operator && currentNumber !== '') {
+        display.value = `${previousNumber} ${getOperatorSymbol(operator)} ${currentNumber}`;
+    } else {
+        display.value = currentNumber;
+    }
+}
+function getOperatorSymbol(op) {
+    return {
+        '+': '+',
+        '-': '−',
+        '*': '×',
+        '/': '÷'
+    }[op] || '';
+}
+
     </script>
 </body>
 
